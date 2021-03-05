@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport" />
+  <title>Jieun MIN</title>
+  <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script defer src="js/main.js"></script>
+  <link rel="apple-touch-icon" sizes="180x180" href="ico/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="ico/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon-16x16.png">
+  <link rel="manifest" href="ico/site.webmanifest">
+  <meta name="msapplication-TileColor" content="#da532c">
+  <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+  <div id="wrap">
+    <section id="home">
+      <header>
+        <input type="checkbox" id="hamburger">
+        <label for="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+        <div class="slideBar">
+          <a class="home" href="#">HOME</a>
+          <a class="about" href="#">ABOUT</a>
+          <a class="project" href="#">PROJECT</a>
+          <a class="contact" href="contact.html">CONTACT</a>
+        </div>
+        <div class="title">
+          <h4 class="titleOnWeb">Hi, I am Jieun, a front-end developer!
+            <span class="grey">&lt;/</span>
+            <span class="blue">title</span>
+            <span class="grey">&gt;</span>
+          </h4>
+          <h4 class="titleOnMobile">
+            <span class="grey">&lt;</span>
+            <span class="blue">title</span>
+            <span class="grey">&gt;</span>
+            Hi, I am Jieun, a front-end developer!
+            <span class="grey">&lt;/</span>
+            <span class="blue">title</span>
+            <span class="grey">&gt;</span>
+          </h4>
+        </div>
+      </header>
+    </section>
+    <section id="about">
+      <div class="profile"></div>
+      <div class="intro">
+        <div class="introtext">
+          <h1>안녕하세요,</h1>
+          <h4 class="h4-1">신입 프론트엔드 개발자 민지은입니다.</h4>
+          <h4 class="h4-2">
+            2021년 3월 UI/UX 디자인 웹퍼블리셔/프론트엔드
+            개발자 양성 과정을 수료 예정입니다.</h4>
+          <h4 class="h4-3">
+            다양한 기술을 얕게 알기보단 기본기를 튼튼히 다져 새로운 기술도
+            어려움 없이 배울 수 있는 개발자가 되고 싶습니다.
+          </h4>
+          <h4 class="h4-4">
+            html, css, vanila javascript(ES6), jquery 활용
+            가능하며 틈틈이 react를 공부하고 알고리즘을 풀고
+            있습니다.
+          </h4>
+          <button class="gotoresume">
+            <div class="buttontext">
+              <p>learn more</p>
+              <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/2LVH33u">
+                <span>이력서 보기</span>
+              </a>
+            </div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <section id="project">
+      <div class="ptitle">
+        <h1>Project</h1>
+        <button id="clostbtn" onclick="removeiframe()">x</button>
+      </div>
+      <div class="everypbox">
+        <div class="pjec1 pbox">
+          <img src="image/pjec1.png" alt="">
+          <div class="pjecHoverBg"></div>
+          <div class="pjecText" onclick="showiframe2()" target="f2">
+            <p>와인 구독 브랜드 웹사이트 VINBLOCK 모바일 반응형</p>
+            <p class="attribute"></p>
+          </div>
+        </div>
+        <div class="pjec2 pbox">
+          <img src="image/pjec2.png" alt="">
+          <div class="pjecHoverBg"></div>
+          <div class="pjecText" onclick="showiframe1()" target="f1">
+            <p>와인 구독 브랜드 웹사이트 VINBLOCK</p>
+          </div>
+        </div>
+        <div class="pjec3 pbox">
+          <img src="image/pjec3.png" alt="">
+          <div class="pjecHoverBg"></div>
+          <div class="pjecText" onclick="showiframe3()" target="f3"> 
+              <p>와인 구독 브랜드 웹사이트 VINBLOCK 회원가입/로그인/게시판 페이지</p>
+          </div>
+        </div>
+        <div class="pjec4 pbox">
+          <div class="pjecHoverBg"></div>
+          <div class="pjecText">
+            <a href="">
+              <p>준비중</p>
+            </a>
+          </div>
+        </div>
+        <div class="pjec5 pbox">
+          <div class="pjecHoverBg"></div>
+          <div class="pjecText">
+            <a href="">
+              <p>준비중</p>
+            </a>
+          </div>
+        </div>
+        <div class="pjec6 pbox">
+          <div class="pjecHoverBg"></div>
+          <div class="pjecText">
+            <a href="">
+              <p>준비중</p>
+            </a>
+          </div>
+        </div>
+        <iframe src="http://13.124.142.215:8080/vinblocklogin/index.html" id="iframe1" class="iframe1" onclick="removeiframe()"
+          frameborder="0" name="f1" scrolling="yes"></iframe>
+        <iframe src="http://13.124.142.215:8080/vinblocklogin/index.html" id="iframe2" class="iframe2" onclick="removeiframe()"
+          frameborder="0" name="f2" scrolling="yes"></iframe>
+        <iframe src="http://13.124.142.215:8080/vinblocklogin/login.jsp" id="iframe3" class="iframe3" onclick="removeiframe()"
+          frameborder="0" name="f3" scrolling="yes"></iframe>
+      </div>
+    </section>
+    <hr>
+    <section id="contactandresume">
+      <div class="resume">
+        <div class="resumeText">
+          <a target="_blank" rel="noopener noreferrer" href="https://bit.ly/2LVH33u">Resume</a>
+        </div>
+      </div>
+      <div class="contact">
+        <div class="contactText">
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+    <hr>
+    <footer>
+      <div class="info">
+        © 2021 Jieun MIN
+      </div>
+      <div class="footerbtn">
+        <a href="git"><img src="image/git.png" alt="git"></a>
+        <a target="_blank" href="https://velog.io/@jieunmin"><img src="image/velog.jpg.png" alt="velog"></a>
+        <div onclick="topFunction()" class="tothetop">
+          <span class="notonhover">></span>
+          <span class="onhover">top</span>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+</body>
+
+</html>
